@@ -16,4 +16,11 @@ document.querySelector('.hide-automatically').addEventListener('click', function
 document.querySelector('.add-a-rule button').addEventListener('click', function(){
     document.querySelector('.add-a-rule').style.display = 'none';
     document.querySelector('.rule-added').style.display = 'block';
+
+    var pattern = document.querySelector('.add-a-rule input').value;
+    chrome.storage.sync.get('patterns', function(storage) {
+        var patterns = storage.patterns || {}
+        patterns[pattern] = true
+        chrome.storage.sync.set({patterns: patterns})
+    });
 })
