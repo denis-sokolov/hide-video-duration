@@ -11,7 +11,14 @@
         "128": "icons/256.png"
     },
 
-    "browser_action": {
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
         "default_popup": "toolbar/popup.html"
-    }
+    },
+    "permissions": [
+        "declarativeContent"
+    ]
 }
