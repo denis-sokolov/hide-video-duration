@@ -14,6 +14,10 @@ document.querySelector('.hide-automatically').addEventListener('click', function
 })
 
 document.querySelector('.add-a-rule button').addEventListener('click', function(){
+    chrome.permissions.request({
+      origins: ['http://www.youtube.com/', 'https://www.youtube.com/']
+    });
+
     document.querySelector('.add-a-rule').style.display = 'none';
     document.querySelector('.rule-added').style.display = 'block';
 
