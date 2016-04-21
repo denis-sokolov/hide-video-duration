@@ -19,6 +19,7 @@
         "default_popup": "toolbar/popup.html"
     },
     "permissions": [
+        "activeTab",
         "declarativeContent"
     ]
 }
