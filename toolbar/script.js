@@ -12,3 +12,8 @@ document.querySelector('.hide-automatically').addEventListener('click', function
     document.querySelector('.add-a-rule').style.display = 'block';
     document.querySelector('.add-a-rule input').focus();
 })
+
+document.querySelector('.add-a-rule button').addEventListener('click', function(){
+    document.querySelector('.add-a-rule').style.display = 'none';
+    document.querySelector('.rule-added').style.display = 'block';
+})

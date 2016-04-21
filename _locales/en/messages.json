@@ -23,5 +23,9 @@
     "hide_automatically": {
         "message": "Hide automatically",
         "description": ""
+    },
+    "rule_added_success": {
+        "message": "Duration on these videos will now be hidden automatically.",
+        "description": ""
     }
 }
