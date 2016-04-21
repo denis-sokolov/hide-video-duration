@@ -3,6 +3,16 @@ chrome.tabs.insertCSS({
 });
 
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
+    chrome.storage.sync.get('patterns', function(storage){
+        var patterns = Object.keys(storage.patterns || {});
+        var patternFound = patterns.some(function(pattern){
+            return tab.title.indexOf(pattern) > -1;
+        });
+        if (!patternFound) return;
+        document.querySelector('.hide-success').style.display = 'none';
+        document.querySelector('.hidden-automatically').style.display = 'block';    
+    })
+
     var tab = tabs[0];
     document.querySelector('.add-a-rule input').value =
         tab.title.replace(/[\s-]+YouTube$/, '');

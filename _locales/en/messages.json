@@ -12,6 +12,10 @@
         "message": "Video duration has been hidden.",
         "description": ""
     },
+    "duration_hidden_automatically": {
+        "message": "Video duration has been hidden automatically.",
+        "description": ""
+    },
     "add_a_rule_explanation": {
         "message": "Always hide duration when the title of the video includes",
         "description": ""
