@@ -4,5 +4,10 @@
     "version": "1.0.0",
 
     "default_locale": "en",
-    "description": "__MSG_extension_description__"
+    "description": "__MSG_extension_description__",
+    "icons": {
+        "16": "icons/256.png",
+        "48": "icons/256.png",
+        "128": "icons/256.png"
+    }
 }
