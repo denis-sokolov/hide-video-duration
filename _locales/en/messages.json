@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Hide video duration",
+        "description": ""
+    },
+    "extension_description": {
+        "message": "Hide video duration on video services to avoid spoilers",
+        "description": ""
+    }
+}
