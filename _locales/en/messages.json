@@ -9,7 +9,7 @@
     },
 
     "duration_hidden": {
-        "message": "Video duration has been hidden!",
+        "message": "Video duration has been hidden.",
         "description": ""
     }
 }
