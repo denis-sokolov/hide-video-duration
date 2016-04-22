@@ -12,7 +12,7 @@ button {
     cursor: pointer;
 }
 
-.hide-success {
+.hide-success, .hidden-automatically {
     text-align: center;
 }
     .success {

@@ -38,3 +38,21 @@ document.querySelector('.add-a-rule button').addEventListener('click', function(
         chrome.storage.sync.set({patterns: patterns})
     });
 })
+
+document.querySelector('.stop-hiding-automatically').addEventListener('click', function(){
+    document.querySelector('.hidden-automatically').style.display = 'none';
+    document.querySelector('.stopped-hiding-automatically').style.display = 'block';
+
+    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
+        var tab = tabs[0];
+        chrome.storage.sync.get('patterns', function(storage){
+            var patterns = storage.patterns || {};
+            Object.keys(patterns).filter(function(pattern){
+                return tab.title.indexOf(pattern) > -1;
+            }).forEach(function(pattern){
+                delete patterns[pattern];
+            });
+            chrome.storage.sync.set({patterns: patterns})
+        })
+    });
+})

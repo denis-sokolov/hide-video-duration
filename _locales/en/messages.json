@@ -31,5 +31,13 @@
     "rule_added_success": {
         "message": "Duration on these videos will now be hidden automatically.",
         "description": ""
+    },
+    "stop_hiding_automatically": {
+        "message": "Stop doing that",
+        "description": ""
+    },
+    "stopped_hiding_automatically": {
+        "message": "Will not hide the duration automatically anymore on these videos.",
+        "description": ""
     }
 }
