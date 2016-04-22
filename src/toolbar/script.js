@@ -1,5 +1,5 @@
-chrome.tabs.insertCSS({
-    file: 'src/websites/youtube.css'
+chrome.tabs.executeScript({
+    file: 'src/websites/youtube.js'
 });
 
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
@@ -10,7 +10,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
         });
         if (!patternFound) return;
         document.querySelector('.hide-success').style.display = 'none';
-        document.querySelector('.hidden-automatically').style.display = 'block';    
+        document.querySelector('.hidden-automatically').style.display = 'block';
     })
 
     var tab = tabs[0];

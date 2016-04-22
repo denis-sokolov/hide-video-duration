@@ -8,8 +8,8 @@ chrome.tabs.onUpdated.addListener(function(id){
           return tab.title.indexOf(pattern) > -1;
       });
       if (!patternFound) return;
-      chrome.tabs.insertCSS({
-          file: 'src/websites/youtube.css'
+      chrome.tabs.executeScript({
+          file: 'src/websites/youtube.js'
       });
     })
   })
