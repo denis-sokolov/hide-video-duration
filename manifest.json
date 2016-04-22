@@ -6,17 +6,17 @@
     "default_locale": "en",
     "description": "__MSG_extension_description__",
     "icons": {
-        "16": "icons/256.png",
-        "48": "icons/256.png",
-        "128": "icons/256.png"
+        "16": "src/icons/256.png",
+        "48": "src/icons/256.png",
+        "128": "src/icons/256.png"
     },
 
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["src/background.js"],
         "persistent": false
     },
     "page_action": {
-        "default_popup": "toolbar/popup.html"
+        "default_popup": "src/toolbar/popup.html"
     },
     "permissions": [
         "activeTab",
