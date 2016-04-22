@@ -12,7 +12,10 @@
     },
 
     "background": {
-        "scripts": ["src/background.js"],
+        "scripts": [
+            "src/page-action-rules.js",
+            "src/hide-automatically.js"
+        ],
         "persistent": false
     },
     "page_action": {
