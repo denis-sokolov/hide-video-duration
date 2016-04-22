@@ -1,5 +1,5 @@
 chrome.tabs.insertCSS({
-    code: '.ytp-progress-bar,.ytp-time-separator,.ytp-time-duration,.video-time{display:none!important}'
+    file: 'src/websites/youtube.css'
 });
 
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){

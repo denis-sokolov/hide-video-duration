@@ -23,8 +23,8 @@ chrome.tabs.onUpdated.addListener(function(id){
           return tab.title.indexOf(pattern) > -1;
       });
       if (!patternFound) return;
-      chrome.tabs.insertCSS(id, {
-          code: '.ytp-progress-bar,.ytp-time-separator,.ytp-time-duration,.video-time{display:none!important}'
+      chrome.tabs.insertCSS({
+          file: 'src/websites/youtube.css'
       });
     })
   })
