@@ -14,7 +14,8 @@
 
     var button = function(text, duration){
         var el = document.createElement('span');
-        el.innerText = text;
+        var thinSpace = ' ';
+        el.innerText = text.replace(' ', thinSpace);
         el.style.cursor = 'pointer';
         el.style.userSelect = 'none';
         el.style.webkitUserSelect = 'none';
