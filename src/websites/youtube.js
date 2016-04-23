@@ -15,7 +15,6 @@
     var button = function(text, duration){
         var el = document.createElement('span');
         el.innerText = text;
-        el.style.marginLeft = '15px';
         el.style.cursor = 'pointer';
         el.style.userSelect = 'none';
         el.style.webkitUserSelect = 'none';
@@ -25,7 +24,14 @@
 
     var addButton = function(text, duration){
         var el = button(text, duration);
-        document.querySelector('.ytp-time-duration').parentNode.appendChild(el);
+        var container = document.querySelector('.ytp-time-duration').parentNode;
+        if (duration < 0) {
+            el.style.marginRight = '15px';
+            container.insertBefore(el, document.querySelector('.ytp-time-current'));
+        } else {
+            el.style.marginLeft = '15px';
+            container.appendChild(el);
+        }
     };
 
     addButton('-10 min', -600);
