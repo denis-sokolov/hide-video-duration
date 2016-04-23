@@ -36,6 +36,10 @@
         "message": "Existing rules:",
         "description": ""
     },
+    "options_remove_rule": {
+        "message": "Remove",
+        "description": ""
+    },
     "rule_added_success": {
         "message": "Duration on these videos will now be hidden automatically.",
         "description": ""
