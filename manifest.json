@@ -29,5 +29,9 @@
     "optional_permissions": [
         "http://www.youtube.com/",
         "https://www.youtube.com/"
-    ]
+    ],
+    "options_ui": {
+        "page": "src/options/index.html",
+        "chrome_style": true
+    }
 }

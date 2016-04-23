@@ -28,6 +28,14 @@
         "message": "Hide automatically",
         "description": ""
     },
+    "options_title": {
+        "message": "Hide video duration options",
+        "description": ""
+    },
+    "options_existing_rules": {
+        "message": "Existing rules:",
+        "description": ""
+    },
     "rule_added_success": {
         "message": "Duration on these videos will now be hidden automatically.",
         "description": ""
