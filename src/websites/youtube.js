@@ -12,7 +12,7 @@
         video.currentTime = video.currentTime + amount;
     };
 
-    var addButton = function(text, duration){
+    var button = function(text, duration){
         var el = document.createElement('span');
         el.innerText = text;
         el.style.marginLeft = '15px';
@@ -20,6 +20,11 @@
         el.style.userSelect = 'none';
         el.style.webkitUserSelect = 'none';
         el.addEventListener('click', function(){ seekVideo(duration); });
+        return el;
+    };
+
+    var addButton = function(text, duration){
+        var el = button(text, duration);
         document.querySelector('.ytp-time-duration').parentNode.appendChild(el);
     };
 
