@@ -3,7 +3,7 @@
     window['hide-video-duration-performed'] = true;
 
     var style = document.createElement('style');
-    style.innerText = '.ytp-progress-bar, .ytp-time-separator, .ytp-time-duration, .video-time { display: none !important; }';
+    style.innerText = '.ytp-progress-bar-container, .ytp-time-separator, .ytp-time-duration, .video-time { display: none !important; }';
     document.head.appendChild(style);
 
     var seekVideo = function(amount){
