@@ -8,7 +8,7 @@ chrome.tabs.onUpdated.addListener(function(id){
           return tab.title.indexOf(pattern) > -1;
       });
       if (!patternFound) return;
-      chrome.tabs.executeScript({
+      chrome.tabs.executeScript(id, {
           file: 'src/websites/youtube.js'
       });
     })
