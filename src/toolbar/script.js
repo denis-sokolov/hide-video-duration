@@ -1,7 +1,3 @@
-chrome.tabs.executeScript({
-    file: 'src/websites/youtube.js'
-});
-
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
     chrome.storage.sync.get('patterns', function(storage){
         var patterns = Object.keys(storage.patterns || {});
@@ -14,6 +10,12 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
     })
 
     var tab = tabs[0];
+
+    chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        files: ['src/websites/youtube.js']
+    });
+
     document.querySelector('.add-a-rule input').value =
         tab.title.replace(/[\s-]+YouTube$/, '');
 });

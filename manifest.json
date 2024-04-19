@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "__MSG_extension_name__",
     "version": "1.0.2",
 
@@ -12,26 +12,23 @@
     },
 
     "background": {
-        "scripts": [
-            "src/page-action-rules.js",
-            "src/hide-automatically.js"
-        ],
-        "persistent": false
+        "service_worker": "src/service-worker.js",
+        "type": "module"
     },
-    "page_action": {
+    "action": {
         "default_popup": "src/toolbar/popup.html"
     },
     "permissions": [
         "activeTab",
         "declarativeContent",
+        "scripting",
         "storage"
     ],
-    "optional_permissions": [
+    "optional_host_permissions": [
         "http://www.youtube.com/",
         "https://www.youtube.com/"
     ],
     "options_ui": {
-        "page": "src/options/index.html",
-        "chrome_style": true
+        "page": "src/options/index.html"
     }
 }
