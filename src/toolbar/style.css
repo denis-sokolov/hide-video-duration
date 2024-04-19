@@ -1,29 +1,30 @@
 body {
-    min-width: 250px;
+  min-width: 250px;
 
-    padding: 20px;
+  padding: 20px;
 
-    font-size: 15px;
+  font-size: 15px;
 }
 
 button {
-    padding: 5px 10px;
-    font-size: 90%;
-    cursor: pointer;
+  padding: 5px 10px;
+  font-size: 90%;
+  cursor: pointer;
 }
 
-.hide-success, .hidden-automatically {
-    text-align: center;
+.hide-success,
+.hidden-automatically {
+  text-align: center;
 }
-    .success {
-        margin-bottom: 20px;
-    }
+.success {
+  margin-bottom: 20px;
+}
 
 .add-a-rule-inputs {
-    margin: 8px 0;
-    white-space: nowrap;
+  margin: 8px 0;
+  white-space: nowrap;
 }
 .add-a-rule-inputs input {
-    width: 400px;
-    height: 20px;
+  width: 400px;
+  height: 20px;
 }
