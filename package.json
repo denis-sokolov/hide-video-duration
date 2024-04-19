@@ -1,0 +1,13 @@
+{
+  "name": "hide-video-duration",
+  "description": "An extension for Google Chrome to hide video duration on websites.",
+  "scripts": {
+    "format": "prettier --end-of-line auto --write 'src/**/*.{css,html,js}'",
+    "pack": "rm -rf dist && mkdir dist && cp -r _locales manifest.json src dist/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/chrome": "^0.0.266",
+    "prettier": "^3.2.5"
+  }
+}
